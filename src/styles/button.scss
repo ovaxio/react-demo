@@ -1,0 +1,45 @@
+.lls_btn {
+    background: #fff;
+    border-radius: $border-radius;
+    border: $border-primary;
+    color: $primary;
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0.5em 0.75em;
+    padding: 1em 1.5em;
+    text-transform: uppercase;
+    box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.1);
+    transition: all $transition-duration $transition-fn;
+
+    &:hover {
+        color: darken($primary, 10%);
+        border-color: darken($primary, 10%);
+        box-shadow: 0px 1px 2px 0 rgba(0,0,0,0.2);
+    }
+
+    .fa {
+        margin-right: .5em;
+        font-size: 1.3em;
+        vertical-align: bottom;
+        font-weight: 500;
+    }
+}
+
+.lls_btn--primary {
+    background: $primary;
+    border-color: transparent;
+    color: #fff;
+
+    &:hover {
+        color: #fff;
+        background: darken($primary, 10%);
+    }
+}
+
+.lls_btn[disabled] {
+    background: #fff;
+    border-color: $grey-lighter;
+    color: $grey-lighter;
+    cursor: not-allowed;
+}

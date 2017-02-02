@@ -1,0 +1,51 @@
+.lls_checkboxInput {
+    display: none;
+}
+
+.lls_checkbox {
+    position: relative;
+
+    &:before,
+    &:after {
+        content: '';
+        top: 50%;
+        right: 50%;
+        position: absolute;
+    }
+
+    &:before {
+        width: 16px;
+        height: 16px;
+        background: #fff;
+        margin-top: -8px;
+        margin-right: -8px;
+        border-radius: 50%;
+        border: 2px solid #55bc9c;
+    }
+
+    &:after {
+        width: 8px;
+        height: 8px;
+        background: #55bc9c;
+        margin-top: -4px;
+        margin-right: -4px;
+        border-radius: 50%;
+        opacity: 0;
+        transition: opacity $transition-duration $transition-fn;
+    }
+
+    .lls_checkboxInput:checked + &:after {
+        opacity: 1;
+    }
+
+    &.lls_checkbox--reverse {
+        &:before {
+            background: $primary;
+            border-color: #fff;
+        }
+
+        &:after {
+            background: #fff;
+        }
+    }
+}

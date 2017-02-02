@@ -1,0 +1,121 @@
+@import '../../../../styles/inc/var';
+
+.lls_component-box {
+    margin: 2.75em;
+    background: #fff;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,.3);
+}
+
+.lls_studentsList-header {
+    display: flex;
+    background: $primary;
+    color: #fff;
+    align-items: center;
+}
+
+.lls_studentLine-col {
+    flex-grow: 1;
+    display: flex;
+    border-bottom: 1px solid $grey-lighter;
+    align-items: center;
+}
+
+.lls_studentLine-col > * {
+    padding: 1em;
+}
+
+.lls_studentLine-col.lls_checkbox {
+    width: 5em;
+    text-align: right;
+    flex-grow: 0;
+    display: block;
+    border: none;
+    margin: 1em 0;
+    border-left: 4px solid transparent;
+    transition: border-color $transition-duration $transition-fn;
+}
+
+.lls_studentsList-line {
+    display: flex;
+
+    &:hover {
+        .lls_studentLine-col.lls_checkbox {
+            border-left-color: $primary;
+        }
+
+        .lls_studentLine-name {
+            color: $primary;
+        }
+    }
+
+    &:last-child .lls_studentLine-col{
+        border-bottom: none;
+    }
+}
+
+.lls_studentsList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.lls_studentsList-header .lls_studentLine-col {
+    border-bottom: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.lls_studentLine-info,
+.lls_studentsList-header .lls_studentLine-info {
+    flex-grow: 1;
+}
+
+.lls_studentLine-actions {
+    width: 300px;
+    font-weight: 700;
+
+    span {
+        color: $grey-lighter;
+    }
+    a {
+        color: #535D7F;
+        cursor: pointer;
+        transition: color $transition-duration $transition-fn;
+
+        &:hover,
+        &:focus {
+            color: #48B8E5;
+        }
+    }
+}
+
+.lls_studentLine-avatar {
+    background: $primary;
+    padding: 0;
+    margin: 1em;
+    border-radius: 50%;
+    border: 2px solid $primary;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.lls_studentLine-lastName {
+    text-transform: uppercase;
+}
+
+.lls_studentLine-name {
+    font-weight: 700;
+    transition: color $transition-duration $transition-fn;
+}
+
+.lls_studentLine-status {
+    color: #aaa;
+    font-size: .9em;
+}

@@ -1,0 +1,27 @@
+// COLORS -------------------------
+
+$grey: #333;
+$grey-light: #aaa;
+$grey-lighter: #ccc;
+
+
+$primary: #55BC9C;
+
+$text-color: $grey;
+$background-color: #fff; 
+$text-color-reverse: #fff;
+$background-color-reverse: $grey; 
+
+
+//BORDERS
+$border-radius: 2px;
+$border-radius-large: 5px;
+
+$border-default: 1px solid $grey;
+$border-primary: 1px solid $primary;
+$border-transparent: 1px solid transparent;
+
+// ANIMATIONS
+$transition-fn: cubic-bezier(0.54, 0.54, 0.36, 0.91);
+$transition-duration: .2s;
+$transitionduration-slow: .5s;

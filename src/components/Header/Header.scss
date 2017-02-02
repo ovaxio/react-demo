@@ -1,0 +1,50 @@
+@import '../../styles/inc/var';
+
+.lls_header {
+    display: flex;
+    flex-direction: column;
+
+    background: rgba(0,0,0,.5) url(./assets/bg_space.jpg) center top no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: #fff;
+    padding: 2em 2em 0em;
+}
+
+.lls_header-link {
+    color: #fff;
+    opacity: .7;    
+    text-decoration: none;
+}
+
+.lls_header-link:focus,
+.lls_header-link:hover {
+    opacity: 1; 
+    color: #fff;   
+    text-decoration: none;
+}
+
+.lls_header-tabLink {
+    text-transform: uppercase;
+}
+
+
+.lls_header-title {
+    text-align: center;
+}
+
+.lls_header-tabs {
+    align-self: center;
+    padding-bottom: 1em;
+}
+
+.lls_header-tabLink {
+    padding: 1em 0;
+    margin: 0 3em;
+}
+
+.lls_header-tabLink--active {
+    color: #fff;
+    opacity: 1;
+    border-bottom: 2px solid $primary;
+}
