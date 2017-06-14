@@ -1,5 +1,7 @@
 # React Demo
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ovaxio/react-demo.svg)](https://greenkeeper.io/)
+
 Demo d'une application tres simple en react
 
 Utilisations de:
